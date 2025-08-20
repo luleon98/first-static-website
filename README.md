@@ -1,7 +1,7 @@
 # Static Website on AWS
 
 ## Overview
-- A simple static website built using S3 and Amplify.
+- A simple, secure static website built using S3 and Amplify.
 
 ## Live Preview
 - [Live Site](https://test.d11dfvv0fsfnmj.amplifyapp.com/)
@@ -12,7 +12,7 @@
 - [Mobile View](website-mobile.jpeg)
 
 ## Architecture
-- <img width="489" height="81" alt="First Static Website" src="https://github.com/user-attachments/assets/ece48446-cd6b-4351-ba9e-276519c872fc" />
+- [Diagram](static-website-diagram.png)
 - [S3 Versioning](s3-versioning.png)
 - [Amplify Deployments](amplify-screenshot.png)
 
@@ -22,18 +22,18 @@
 - HTML
 
 ## Deployment / Setup
-1. Create an S3 bucket, unblock public access settings, enable versioning in case of wanting to update files but have restore as a possibily, and enable 
-2. Upload index.html, error.html, tokyo.jpg, jerry.gif and jerry-2.gif.
-3. Enable static website hosting and configure bucket policy for public read.
-4. Deploy website in Amplify to create HTTPS access.
+1. Create an S3 bucket, unblock public access, and enable versioning (useful for restoring previous file versions).
+2. Upload the website files: index.html, error.html, tokyo.jpg, jerry.gif, and jerry-2.gif.
+3. Enable static website hosting and configure the bucket policy for public read access.
+4. Deploy the website via AWS Amplify to get HTTPS access automatically.
 
 ## Features and Learning
 - Hosting static websites in the cloud.
-- Configuring bucket policies and versioning files as files were updated from trial and testing code.
+- Configuring bucket policies and managing file versioning during testing and updates.
 - Using Amplify to create HTTPS access.
 
 ## Future Improvements
-- Add a custom domain via Route 53 (Saving this for when creating my own website to show portfolio).
+- Add a custom domain via Route 53 (Planned for a future personal portfolio site).
 - Learn more HTML and website design to give more personality and personal touch to websites.
 
 ## Reflection
